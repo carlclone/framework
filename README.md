@@ -7,6 +7,7 @@
 
 https://symfony.com/doc/current/create_framework/unit_testing.html
 
+更新结构图 , front.php 成为了一个简单的程序入口, 大的框是 Framework
 
 安装 symfony  https://symfony.com/download
 
