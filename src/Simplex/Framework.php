@@ -15,7 +15,7 @@ class Framework
     private $controllerResolver;
     private $argumentResolver;
 
-    public function __construct(UrlMatcher $matcher, ControllerResolver $controllerResolver, ArgumentResolver $argumentResolver)
+    public function __construct($matcher, $controllerResolver, $argumentResolver)
     {
         $this->matcher = $matcher;
         $this->controllerResolver = $controllerResolver;

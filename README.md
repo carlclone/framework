@@ -1,6 +1,12 @@
 
+### 测试
 
+./vendor/bin/phpunit
 
+覆盖率测试,需要开启 xdebug 
+
+ ./vendor/bin/phpunit --coverage-html=cov/
+ ./vendor/bin/phpunit --coverage-text
 
 ![avatar][i1]
 
