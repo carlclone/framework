@@ -5,7 +5,8 @@
   symfony server:start
   
   
-  
+  //单入口模式
+  symfony server:start --port=4321 --passthru=front.php
   
   
   
