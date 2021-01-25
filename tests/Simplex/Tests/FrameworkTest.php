@@ -1,7 +1,5 @@
 <?php
 
-namespace Simplex\Tests;
-
 use Calendar\Controller\LeapYearController;
 use PHPUnit\Framework\TestCase;
 use Simplex\Framework;
