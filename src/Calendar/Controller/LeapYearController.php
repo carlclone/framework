@@ -21,5 +21,15 @@ class LeapYearController
 
         return $response;
     }
+
+    public function index2(Request $request, $year)
+    {
+        $leapYear = new LeapYear();
+        if ($leapYear->isLeapYear($year)) {
+            return 'Yep, this is a leap year! ';
+        }
+
+        return 'Nope, this is not a leap year.';
+    }
 }
 
