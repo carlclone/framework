@@ -14,7 +14,6 @@
  `./vendor/bin/phpunit --coverage-html=cov/`
  `./vendor/bin/phpunit --coverage-text`
 
-![avatar][i1]
 
 
 
