@@ -1,35 +1,37 @@
+# framework
 
-### 测试
+## 运行
 
-./vendor/bin/phpunit
+//单入口模式
+`symfony server:start --port=4321 --passthru=front.php`
+
+## 测试
+
+`./vendor/bin/phpunit`
 
 覆盖率测试,需要开启 xdebug 
 
- ./vendor/bin/phpunit --coverage-html=cov/
- ./vendor/bin/phpunit --coverage-text
+ `./vendor/bin/phpunit --coverage-html=cov/`
+ `./vendor/bin/phpunit --coverage-text`
 
 ![avatar][i1]
 
 
-https://symfony.com/doc/current/create_framework/unit_testing.html
 
-更新结构图 , front.php 成为了一个简单的程序入口, 大的框是 Framework
+## 草稿
+
+https://symfony.com/doc/current/create_framework/unit_testing.html
 
 安装 symfony  https://symfony.com/download
 
  curl -sS https://get.symfony.com/cli/installer | bash
- 
-  symfony server:start
+
+ symfony server:start
+
   
-  
-  //单入口模式
-  symfony server:start --port=4321 --passthru=front.php
-  
-  
-  
-  
-  
+
   //Request 类的使用
+
   ```php
 
 // the URI being requested (e.g. /about) minus any query parameters
@@ -65,7 +67,7 @@ $response->headers->set('Content-Type', 'text/html');
 
 // configure the HTTP cache headers
 $response->setMaxAge(10);
-```
+  ```
 
 
 
