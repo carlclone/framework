@@ -3,6 +3,7 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 
 use Simplex\StringResponseListener;
+use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\HttpFoundation\Request;
 
 $routes = include __DIR__.'/../src/app.php';
